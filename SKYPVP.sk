@@ -1,0 +1,1507 @@
+#EASY SETUP
+#PUT CHOOSE A SPAWN FROM THE CONFIG FROM DOWN !
+#MAKE A REGION WHERE YOU WANT THE VOID TO START USE worldguard FOR THIS! "/rg create void "
+
+#any help dm me on discord 2hmd#0069
+
+options: 
+ #You can change it to what ever you want, the kit will despawn !
+ kitname: &c&lKIT
+
+ #The world you have the game on!
+ world: world
+
+ #spawn location, has to be like this X, Y, Z
+ spawn: 0.501, 91, 0.537
+
+
+ #RANKS PERMISSION "1 weakest rank" and member kit don't have permission
+ permission-rank-1: skypvp.kit.vip
+ permission-rank-2: skypvp.kit.vip+
+ permission-rank-3: skypvp.kit.mvp
+ permission-rank-4: skypvp.kit.mvp+
+
+
+ #Drop location, has to be like this X, Y, Z
+ droplocation: 0, 90, 20
+
+
+ #xp location, has to be like this X, Y, Z
+ xplocation: -121, 94, 23
+
+ #shop prices !
+ sword1: 16
+ sword2: 32
+ sword3: 48 
+ sword4: 64
+ boots1: 16
+ boots2: 32
+ boots3: 48 
+ boots4: 64
+ leggings1: 16
+ leggings2: 32
+ leggings3: 48 
+ leggings4: 64
+ chestplate1: 16
+ chestplate2: 32
+ chestplate3: 48 
+ chestplate4: 64
+ helmet1: 16
+ helmet2: 32
+ helmet3: 48 
+ helmet4: 64
+ Apple1: 16
+ Apple2: 32
+ Apple3: 48 
+ Apple4: 64
+
+ #shop don't have  enough coins message 
+ nocoins: &7You do not have enough &6Coins
+
+ #create where you want the void to start use worldguard for this ! "/rg create void "
+ region-void-name: void
+ #if you want to item to drop use "true or false"
+ item-drop: true
+
+ #command Stats "Your stats"
+ line1: &8&m----------------------------------
+ line2: &a
+ line3: &aYour kills %{skypvp.kill::%player%}% !
+ line4: &cYour deaths %{skypvp.death::%player%}% !
+ line5: &eYour coins %{skypvp.coins::%player%}%$ !
+ line6: &a
+ line7: &8&m----------------------------------
+ #command Stats "Another player stats"
+ line8: &8&m----------------------------------
+ line9: &a
+ line10: &a%arg 1%'s kills %{skypvp.kill::%arg 1%}% !
+ line11: &c%arg 1%'s deaths %{skypvp.death::%arg 1%}% !
+ line12: &e%arg 1%'s coins %{skypvp.coins::%arg 1%}%$ !
+ line13: &a
+ line14: &8&m----------------------------------
+
+
+ #Death messages, "%{deadFall.%victim%}%" is the attacker 
+ killed-by-player: &7%victim% got killed by %{deadFall.%victim%}% 
+ killed-by-quiting: &7%player% got killed by %{deadFall.%player%}% because he left the server while combat
+ killed-by-void: &7%player% died in the void
+ killed-by-void-player: &7%player% was knocked into the void by %{deadFall.%player%}%
+
+ #Join and quit message
+ join-msg: &7%player% joined the game !
+ quit-msg: &7%player% quit the game !
+
+
+
+ #chest message
+ chest-msg: &aCHEST RESPAWN 
+ #chests locations, has to be like this X, Y, Z
+ chest-1: 0, 0, 0
+ chest-2: 0, 0, 0
+ chest-3: 0, 0, 0
+ chest-4: 0, 0, 0
+ chest-5: 0, 0, 0
+ chest-6: 0, 0, 0
+ chest-7: 0, 0, 0
+ chest-8: 0, 0, 0
+ chest-9: 0, 0, 0
+ chest-10: 0, 0, 0
+ chest-11: 0, 0, 0
+ chest-12: 0, 0, 0
+ chest-13: 0, 0, 0
+ chest-14: 0, 0, 0
+ chest-15: 0, 0, 0
+ chest-16: 0, 0, 0
+ chest-17: 0, 0, 0
+ chest-18: 0, 0, 0
+ chest-19: 0, 0, 0
+ chest-20: 0, 0, 0
+ chest-21: 0, 0, 0
+ chest-22: 0, 0, 0
+ chest-23: 0, 0, 0
+ chest-24: 0, 0, 0
+ chest-25: 0, 0, 0
+ chest-26: 0, 0, 0
+ chest-27: 0, 0, 0
+ chest-28: 0, 0, 0
+ chest-29: 0, 0, 0
+ chest-30: 0, 0, 0
+ chest-31: 0, 0, 0
+ chest-32: 0, 0, 0
+ chest-33: 0, 0, 0
+ chest-34: 0, 0, 0
+ chest-35: 0, 0, 0
+ chest-36: 0, 0, 0
+ chest-37: 0, 0, 0
+ chest-38: 0, 0, 0
+ chest-39: 0, 0, 0
+ chest-40: 0, 0, 0
+ chest-41: 0, 0, 0
+ chest-42: 0, 0, 0
+ chest-43: 0, 0, 0
+ chest-44: 0, 0, 0
+ chest-45: 0, 0, 0
+ chest-46: 0, 0, 0
+ chest-47: 0, 0, 0
+ chest-48: 0, 0, 0
+ chest-49: 0, 0, 0
+ chest-50: 0, 0, 0
+ chest-51: 0, 0, 0
+ chest-52: 0, 0, 0
+ chest-53: 0, 0, 0
+ chest-54: 0, 0, 0
+ chest-55: 0, 0, 0
+ chest-56: 0, 0, 0
+ chest-57: 0, 0, 0
+ chest-58: 0, 0, 0
+ chest-59: 0, 0, 0
+ chest-60: 0, 0, 0
+ chest-61: 0, 0, 0
+ chest-62: 0, 0, 0
+ chest-63: 0, 0, 0
+ chest-64: 0, 0, 0
+ chest-65: 0, 0, 0
+ chest-66: 0, 0, 0
+ chest-67: 0, 0, 0
+ chest-68: 0, 0, 0
+ chest-69: 0, 0, 0
+ chest-70: 0, 0, 0
+
+
+ #sb settings
+ sb-title: &9&lSKYPVP
+ sb1: &1
+ sb2: &7» &eKILLS&7: &f%{skypvp.kill::%loop-player%}%
+ sb3: &2
+ sb4: &7» &eDEATHS&7: &f%{skypvp.death::%loop-player%}%
+ sb5: &3
+ sb6: &7» &eCOINS&7: &f%{skypvp.coins::%loop-player%}%
+ sb7: &4
+ sb8: &7play.test.com
+ 
+ #clear lag messages
+ drop-clear-msg-1: &7Clearing dropped items on 5 seconds 
+ drop-clear-msg-2: &7Killed %size of dropped items% dropped items.
+
+variables: 
+ {skypvp.kill::%player%} = 0
+ {skypvp.death::%player%} = 0
+ {skypvp.coins::%player%} = 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+#don't change any thing !!! 
+
+on projectile hit:
+ world is "{@world}":
+  if projectile is an arrow:
+   delete projectile
+
+
+every 15 seconds:
+ loop all players:
+  if "%loop-player's world%" is "{@world}":
+   wipe loop-player's sidebar
+   set name of sidebar of loop-player to "{@sb-title}"
+   set score "{@sb1}" in sidebar of loop-player to 7
+   set score "{@sb2}" in sidebar of loop-player to 6
+   set score "{@sb3}" in sidebar of loop-player to 5
+   set score "{@sb4}" in sidebar of loop-player to 4
+   set score "{@sb5}" in sidebar of loop-player to 3
+   set score "{@sb6}" in sidebar of loop-player to 2
+   set score "{@sb7}" in sidebar of loop-player to 1
+   set score "{@sb8}" in sidebar of loop-player to 0
+
+
+
+
+every 3 seconds:
+ loop all players:
+  loop players in radius 15 of location({@xplocation}, world "{@world}"):
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+   wait 5 tick
+   shoot bottle of enchanting from location({@xplocation}, world "{@world}") at speed 0
+
+
+
+
+
+
+on region enter:
+ world is not "{@world}":
+  stop
+ if "%event-region%" contains "{@region-void-name}":
+  if player is wearing helmet:
+   if line 1 of the lore of player's helmet contains "&4&lLOCKED":
+    set player's helmet to air
+  if player is wearing chestplate:
+   if line 1 of the lore of player's chestplate contains "&4&lLOCKED":
+    set player's chestplate to air
+  if player is wearing leggings:
+   if line 1 of the lore of player's leggings contains "&4&lLOCKED":
+    set player's leggings to air
+  if player is wearing boots:
+   if line 1 of the lore of player's boots contains "&4&lLOCKED":
+    set player's boots to air
+  loop items in player's inventory:
+   lore of loop-item contains "&4&lLOCKED":
+    remove loop-item from event-player's inventory
+  loop items in player's inventory:
+   add loop-item to {inventory.%name of player%::*}
+  add player's boots to {inventory.%name of player%::*}
+  add player's leggings to {inventory.%name of player%::*}
+  add player's chestplate to {inventory.%name of player%::*}
+  add player's helmet to {inventory.%name of player%::*}
+  drop {inventory.%name of player%::*} at location({@droplocation}, world "{@world}")
+  play sound "LEVEL_UP" with volume 2 with pitch 2 at location({@droplocation}, world "{@world}") for all players
+  apply potion of blindness to player for 1 seconds
+  remove speed from player
+  remove regeneration from player
+  remove Poison from player
+  remove strength from player
+  clear player's inventory
+  wait 3 tick
+  teleport player at location {@spawn} in world "{@world}"
+  play sound "ENDERMAN_TELEPORT" with volume 100 with pitch 1 at player for player  
+  delete {inventory.%name of player%::*}
+  if {deadFall.%player%} is set:
+   heal {deadFall.%player%} by 5 hearts
+   play sound "NOTE_BASS" with volume 100 with pitch 1 at {deadFall.%player%} for {deadFall.%player%} 
+   broadcast "{@killed-by-void-player} &4&l[-%{skypvp.coins::%player%}*0.06%$]" in world("{@world}")
+   add 1 to {skypvp.kill::%{deadFall.%player%}%}
+   add {skypvp.coins::%player%}*0.06 + 0.5 to {skypvp.coins::%{deadFall.%player%}%}
+  else:
+   broadcast "{@killed-by-void} &4&l[-%{skypvp.coins::%player%}*0.06%$]" in world("{@world}")
+  add 1 to {skypvp.death::%player%}
+  remove {skypvp.coins::%player%}*0.06 from {skypvp.coins::%player%}
+  if {skypvp.coins::%player%} is less than 0:
+   set {skypvp.coins::%player%} to 0
+  clear {deadFall.%{deadFall.%player%}%}
+  clear {deadFall.%player%}
+  if player has permission "{@permission-rank-4}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with diamond boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-3}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-2}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-1}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with chain chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+  Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+
+
+
+on damage:
+ if victim are not in world "{@world}":
+  stop
+ if damage > victim's health:
+  if 4.5 > victim's health:
+   heal victim
+   cancel event
+   if victim is wearing helmet:
+    if line 1 of the lore of victim's helmet contains "&4&lLOCKED":
+     set victim's helmet to air
+   if victim is wearing chestplate:
+    if line 1 of the lore of victim's chestplate contains "&4&lLOCKED":
+     set victim's chestplate to air
+   if victim is wearing leggings:
+    if line 1 of the lore of victim's leggings contains "&4&lLOCKED":
+     set victim's leggings to air
+   if victim is wearing boots:
+    if line 1 of the lore of victim's boots contains "&4&lLOCKED":
+     set victim's boots to air
+   loop items in victim's inventory:
+    lore of loop-item contains "&4&lLOCKED":
+     remove loop-item from victim's inventory
+   apply potion of blindness to victim for 1.2 seconds
+   remove speed from victim 
+   remove regeneration from victim 
+   remove Poison from victim 
+   remove strength from victim 
+   if {@item-drop} is true:
+    add victim's boots to {inventorydrop.%name of victim%::*}
+    add victim's leggings to {inventorydrop.%name of victim%::*}
+    add victim's chestplate to {inventorydrop.%name of victim%::*}
+    add victim's helmet to {inventorydrop.%name of victim%::*}
+    drop all items in victim's inventory at victim
+    drop {inventorydrop.%name of victim%::*} at victim
+   teleport victim at location {@spawn} in world "{@world}"  
+   play sound "ENDERMAN_TELEPORT" with volume 100 with pitch 1 at victim for victim
+   play sound "NOTE_BASS" with volume 100 with pitch 1 at attacker for attacker
+   clear victim's inventory 
+   delete {inventorydrop.%name of victim%::*}
+   heal victim
+   heal attacker by 5 hearts
+   if attacker is a player:
+    add {skypvp.coins::%victim%}*0.04 + 1 to {skypvp.coins::%{deadFall.%victim%}%}
+    broadcast "{@killed-by-player} &4&l[-%{skypvp.coins::%victim%}*0.06%$]" in world("{@world}")
+   remove {skypvp.coins::%victim%}*0.04 from {skypvp.coins::%victim%}
+   if {skypvp.coins::%victim%} is less than 0:
+    set {skypvp.coins::%victim%} to 0
+   add 1 to {skypvp.kill::%attacker%}
+   add 1 to {skypvp.death::%attacker%}
+   wait 1 tick
+   clear {deadFall.%victim%}
+   clear {deadFall.%attacker%}
+   if victim has permission "{@permission-rank-4}": 
+    equip victim with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with diamond boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give victim iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if victim has permission "{@permission-rank-3}": 
+    equip victim with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give victim iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if victim has permission "{@permission-rank-2}": 
+    equip victim with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give victim stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if victim has permission "{@permission-rank-1}": 
+    equip victim with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip victim with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give victim stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   equip victim with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip victim with chain chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip victim with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip victim with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give victim stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+ 
+
+
+command /stats [<offline player>] [<text>]: 
+ trigger:  
+  world is not "{@world}":
+   send "&eYou can not use this command on this world"
+   stop
+  if arg 1 is not set:
+   send "{@line1}"
+   send "{@line2}"
+   send "{@line3}"
+   send "{@line4}"
+   send "{@line5}"
+   send "{@line6}"
+   send "{@line7}"
+  if arg 1 is set:
+   if {skypvp.kill::%arg 1%} is not set:
+    set {skypvp.kill::%arg 1%} to 0
+   if {skypvp.death::%arg 1%} is not set:
+    set {skypvp.death::%arg 1%} to 0
+   if {skypvp.coins::%arg 1%} is not set:
+    set {skypvp.coins::%arg 1%} to 5
+   send "{@line8}"
+   send "{@line9}"
+   send "{@line10}"
+   send "{@line11}"
+   send "{@line12}"
+   send "{@line13}"
+   send "{@line14}"
+
+command /resettopcoins [<text>]:
+ permission: op
+ trigger:
+  delete {skypvp.coins::*}
+  delete {_high.to.low.list::*}
+  delete {_size}
+  delete {_n}
+  delete {_high.to.low.list::%{_n}%}
+
+command /topcoins [<text>]:
+	trigger:
+		world is not "{@world}":
+			send "&eYou can not use this command on this world"
+			stop
+		loop {skypvp.coins::*}:
+			add 1 to {_size}
+			if {_low.to.high.list::%loop-value%} is not set:
+				set {_low.to.high.list::%loop-value%} to loop-index
+			else:
+				set {_n} to 0
+				loop {_size} times:
+					set {_n} to {_n}+1
+					{_low.to.high.list::%loop-value-1%.%{_n}%} is not set
+					set {_low.to.high.list::%loop-value-1%.%{_n}%} to loop-index
+					stop loop
+		wait 1 tick
+		set {_n} to size of {_low.to.high.list::*}
+		loop {_low.to.high.list::*}:
+			set {_high.to.low.list::%{_n}%} to loop-value
+			set {_n} to {_n}-1
+		wait 1 tick
+		send "&a&lRICHEST 10 PLAYERS ON THE SERVER"
+		send ""
+		loop {_high.to.low.list::*}:
+			add 1 to {_result}
+			if {_result} is 1:
+				send "&6%{_result}% &f%loop-value%&8: &e%{skypvp.coins::%loop-value%}%$" to player
+			if {_result} is 2:
+				send "&b%{_result}% &f%loop-value%&8: &e%{skypvp.coins::%loop-value%}%$" to player
+			if {_result} is 3:
+				send "&7%{_result}% &f%loop-value%&8: &e%{skypvp.coins::%loop-value%}%$" to player
+			if {_result} is not 3 or 2 or 1:
+				send "&7%{_result}% &f%loop-value%&8: &e%{skypvp.coins::%loop-value%}%$" to player
+			if {_result} is 10:
+				stop
+on join: 
+ world is "{@world}":
+  set join message to "{@join-msg}"
+  if {skypvp.world.%player%.firstjoin} is not set:
+   set {skypvp.world.%player%.firstjoin} to true
+   clear player's inventory
+   wait 1 tick
+   if player has permission "{@permission-rank-4}": 
+    equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with diamond boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if player has permission "{@permission-rank-3}":  
+    equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if player has permission "{@permission-rank-2}": 
+    equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   if player has permission "{@permission-rank-1}": 
+    equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+    equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+    Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+    stop
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with chain chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+
+
+command /shop [<text>]: 
+ trigger:  
+  world is not "{@world}":
+   send "&eYou can not use this command on this world"
+   stop
+  set {_gui} to a new chest inventory with 3 row with name "&4&lShop"
+  wait 1 ticks
+  set slot 10 of {_gui} to diamond sword named "&c&lWEAPON"
+  set slot 13 of {_gui} to diamond chestplate named "&c&lARMOR"
+  set slot 16 of {_gui} to enchanted golden apple named "&c&lAPPLE"
+  open {_gui} to player
+
+
+
+
+on inventory click:
+    if name of event-inventory is "&4&lShop":
+        cancel event
+        wait 1 ticks
+        clicked slot is 10:
+            set {_gui1} to a new chest inventory with 3 row with name "&c&lWEAPON"
+            set slot 10 of {_gui1} to  diamond sword named "&c&lSWORD" with lore "&7Sharpness I||&bPrice: &a{@sword1} Coins"
+            set slot 12 of {_gui1} to diamond sword named "&c&lSWORD" with lore "&7Sharpness II||&bPrice: &a{@sword2} Coins"
+            set slot 14 of {_gui1} to diamond sword named "&c&lSWORD" with lore "&7Sharpness III||&bPrice: &a{@sword3} Coins"
+            set slot 16 of {_gui1} to diamond sword named "&c&lSWORD" with lore "&7Sharpness IV||&bPrice: &a{@sword4} Coins"
+            open {_gui1} to player
+        clicked slot is 13:
+            set {_gui2} to a new chest inventory with 6 row with name "&c&lARMOR"
+            set slot 10 of {_gui2} to diamond helmet named "&c&lHELMET" with lore "&7Protection I||&bPrice: &a{@helmet1} Coins"
+            set slot 19 of {_gui2} to diamond chestplate named "&c&lCHESTPLATE" with lore "&7Protection I||&bPrice: &a{@chestplate1} Coins"
+            set slot 28 of {_gui2} to diamond leggings named "&c&lLEGGINGS" with lore "&7Protection I||&bPrice: &a{@leggings1} Coins"
+            set slot 37 of {_gui2} to diamond boots named "&c&lBOOTS" with lore "&7Protection I||&bPrice: &a{@boots1} Coins"
+
+            set slot 12 of {_gui2} to diamond helmet named "&c&lHELMET" with lore "&7Protection II||&bPrice: &a{@helmet2} Coins"
+            set slot 21 of {_gui2} to diamond chestplate named "&c&lCHESTPLATE" with lore "&7Protection II||&bPrice: &a{@chestplate2} Coins"
+            set slot 30 of {_gui2} to diamond leggings named "&c&lLEGGINGS" with lore "&7Protection II||&bPrice: &a{@leggings2} Coins"
+            set slot 39 of {_gui2} to diamond boots named "&c&lBOOTS" with lore "&7Protection II||&bPrice: &a{@boots2} Coins"
+
+            set slot 14 of {_gui2} to diamond helmet named "&c&lHELMET" with lore "&7Protection III||&bPrice: &a{@helmet3} Coins"
+            set slot 23 of {_gui2} to diamond chestplate named "&c&lCHESTPLATE" with lore "&7Protection III||&bPrice: &a{@chestplate3} Coins"
+            set slot 32 of {_gui2} to diamond leggings named "&c&lLEGGINGS" with lore "&7Protection III||&bPrice: &a{@leggings3} Coins"
+            set slot 41 of {_gui2} to diamond boots named "&c&lBOOTS" with lore "&7Protection III||&bPrice: &a{@boots3} Coins"
+
+            set slot 16 of {_gui2} to diamond helmet named "&c&lHELMET" with lore "&7Protection IV||&bPrice: &a{@helmet4} Coins"
+            set slot 25 of {_gui2} to diamond chestplate named "&c&lCHESTPLATE" with lore "&7Protection IV||&bPrice: &a{@chestplate4} Coins"
+            set slot 34 of {_gui2} to diamond leggings named "&c&lLEGGINGS" with lore "&7Protection IV||&bPrice: &a{@leggings4} Coins"
+            set slot 43 of {_gui2} to diamond boots named "&c&lBOOTS" with lore "&7Protection IV||&bPrice: &a{@boots4} Coins"
+            open {_gui2} to player
+        clicked slot is 16:
+            set {_gui3} to a new chest inventory with 3 row with name "&c&lAPPLE"
+            set slot 10 of {_gui3} to 16 golden apple named "&c&lAPPLE" with lore "&bPrice: &a{@Apple1} Coins"
+            set slot 12 of {_gui3} to 32 golden apple named "&c&lAPPLE" with lore "&bPrice: &a{@Apple2} Coins"
+            set slot 14 of {_gui3} to 48 golden apple named "&c&lAPPLE" with lore "&bPrice: &a{@Apple3} Coins"
+            set slot 16 of {_gui3} to 64 golden apple named "&c&lAPPLE" with lore "&bPrice: &a{@Apple4} Coins"
+            open {_gui3} to player
+
+
+
+
+
+
+on inventory click:
+    if name of event-inventory is "&c&lWEAPON":
+        cancel event
+#Sword
+        clicked slot is 10:
+            if {skypvp.coins::%player%} is greater than or equal to {@sword1}:
+                give player diamond sword of sharpness 1 named "&c&lSWORD" with lore "&c&lSHOP"
+                remove {@sword1} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 12:
+            if {skypvp.coins::%player%} is greater than or equal to {@sword2}:
+                give player diamond sword of sharpness 2 named "&c&lSWORD" with lore "&c&lSHOP"
+                remove {@sword2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 14:
+            if {skypvp.coins::%player%} is greater than or equal to {@sword3}:
+                give player diamond sword of sharpness 3 named "&c&lSWORD" with lore "&c&lSHOP"
+                remove {@sword3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 16:
+            if {skypvp.coins::%player%} is greater than or equal to {@sword4}:
+                give player diamond sword of sharpness 4 named "&c&lSWORD" with lore "&c&lSHOP"
+                remove {@sword4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+    if name of event-inventory is "&c&lARMOR":
+        cancel event
+#ARMOR tire 1
+        clicked slot is 10:
+            if {skypvp.coins::%player%} is greater than or equal to {@helmet1}:
+                give player diamond helmet of Protection 1 named "&c&lHELMET" with lore "&c&lSHOP"
+                remove {@helmet1} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 19:
+            if {skypvp.coins::%player%} is greater than or equal to {@chestplate1}:
+                give player diamond chestplate of Protection 1 named "&c&lCHESTPLATE" with lore "&c&lSHOP"
+                remove {@chestplate1} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 28:
+            if {skypvp.coins::%player%} is greater than or equal to {@leggings1}:
+                give player diamond leggings of Protection 1 named "&c&lLEGGINGS" with lore "&c&lSHOP"
+                remove {@leggings1} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 37:
+            if {skypvp.coins::%player%} is greater than or equal to {@boots1}:
+                give player diamond boots of Protection 1 named "&c&lBOOTS" with lore "&c&lSHOP"
+                remove {@boots1} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+#ARMOR tire 2
+        clicked slot is 12:
+            if {skypvp.coins::%player%} is greater than or equal to {@helmet2}:
+                give player diamond helmet of Protection 2 named "&c&lHELMET" with lore "&c&lSHOP"
+                remove {@helmet2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 21:
+            if {skypvp.coins::%player%} is greater than or equal to {@chestplate2}:
+                give player diamond chestplate of Protection 2 named "&c&lCHESTPLATE" with lore "&c&lSHOP"
+                remove {@chestplate2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 30:
+            if {skypvp.coins::%player%} is greater than or equal to {@leggings2}:
+                give player diamond leggings of Protection 2 named "&c&lLEGGINGS" with lore "&c&lSHOP"
+                remove {@leggings2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 39:
+            if {skypvp.coins::%player%} is greater than or equal to {@boots2}:
+                give player diamond boots of Protection 2 named "&c&lBOOTS" with lore "&c&lSHOP"
+                remove {@boots2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+#ARMOR tire 3
+        clicked slot is 14:
+            if {skypvp.coins::%player%} is greater than or equal to {@helmet3}:
+                give player diamond helmet of Protection 3 named "&c&lHELMET" with lore "&c&lSHOP"
+                remove {@helmet3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 23:
+            if {skypvp.coins::%player%} is greater than or equal to {@chestplate3}:
+                give player diamond chestplate of Protection 3 named "&c&lCHESTPLATE" with lore "&c&lSHOP"
+                remove {@chestplate3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 32:
+            if {skypvp.coins::%player%} is greater than or equal to {@leggings3}:
+                give player diamond leggings of Protection 3 named "&c&lLEGGINGS" with lore "&c&lSHOP"
+                remove {@leggings3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 41:
+            if {skypvp.coins::%player%} is greater than or equal to {@boots3}:
+                give player diamond boots of Protection 3 named "&c&lBOOTS" with lore "&c&lSHOP"
+                remove {@boots3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+#ARMOR tire 4
+        clicked slot is 16:
+            if {skypvp.coins::%player%} is greater than or equal to {@helmet4}:
+                give player diamond helmet of Protection 4 named "&c&lHELMET" with lore "&c&lSHOP"
+                remove {@helmet4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 25:
+            if {skypvp.coins::%player%} is greater than or equal to {@chestplate4}:
+                give player diamond chestplate of Protection 4 named "&c&lCHESTPLATE" with lore "&c&lSHOP"
+                remove {@chestplate4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 34:
+            if {skypvp.coins::%player%} is greater than or equal to {@leggings4}:
+                give player diamond leggings of Protection 4 named "&c&lLEGGINGS" with lore "&c&lSHOP"
+                remove {@leggings4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 43:
+            if {skypvp.coins::%player%} is greater than or equal to {@boots4}:
+                give player diamond boots of Protection 4 named "&c&lBOOTS" with lore "&c&lSHOP"
+                remove {@boots4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+#APPLE
+    if name of event-inventory is "&c&lAPPLE":
+        cancel event
+        clicked slot is 10:
+            if {skypvp.coins::%player%} is greater than or equal to {@Apple1}:
+                give player 16 golden apple named "&c&lAPPLE" with lore "&c&lSHOP"
+                remove {@Apple1} from {skypvp.coins::%player%} 
+            else:
+                send "{@nocoins}"
+        clicked slot is 12:
+            if {skypvp.coins::%player%} is greater than or equal to {@Apple2}:
+                give player 32 golden apple named "&c&lAPPLE" with lore "&c&lSHOP"
+                remove {@Apple2} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 14:
+            if {skypvp.coins::%player%} is greater than or equal to {@Apple3}:
+                give player 48 golden apple named "&c&lAPPLE" with lore "&c&lSHOP"
+                remove {@Apple3} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+        clicked slot is 16:
+            if {skypvp.coins::%player%} is greater than or equal to {@Apple4}:
+                give player 64 golden apple named "&c&lAPPLE" with lore "&c&lSHOP"
+                remove {@Apple4} from {skypvp.coins::%player%}
+            else:
+                send "{@nocoins}"
+
+
+
+on hunger meter change:
+ world is "{@world}":
+  cancel event
+
+
+
+on drop:
+ if lore of item contains "&4&lLOCKED":
+  wait 5 tick
+  delete event-entity
+  play sound "ITEM_BREAK" with volume 0.5 with pitch 1 at event-entity for all players
+
+
+on damage:
+ if victim are in world "{@world}":
+  if attacker is a player:
+   set {deadFall.%victim%} to "%attacker%"
+   wait 30 seconds
+   clear {deadFall.%victim%}
+   stop
+
+on damage:
+ if victim are in world "{@world}":
+  damage cause is fall:
+   cancel event
+
+
+on quit:
+ world is not "{@world}":
+  stop
+ set quit message to "{@quit-msg}"
+ delete {anticlick.%player%}
+ if {deadFall.%player%} is set:
+  if player is wearing helmet:
+   if line 1 of the lore of player's helmet contains "&4&lLOCKED":
+    set player's helmet to air
+  if player is wearing chestplate:
+   if line 1 of the lore of player's chestplate contains "&4&lLOCKED":
+    set player's chestplate to air
+  if player is wearing leggings:
+   if line 1 of the lore of player's leggings contains "&4&lLOCKED":
+    set player's leggings to air
+  if player is wearing boots:
+   if line 1 of the lore of player's boots contains "&4&lLOCKED":
+    set player's boots to air
+  loop items in player's inventory:
+   lore of loop-item contains "&4&lLOCKED":
+    remove loop-item from event-player's inventory
+  if {@item-drop} is true:
+   drop all items in player's inventory at player
+  clear player's inventory
+  teleport player at location {@spawn} in world "{@world}"  
+  add {skypvp.coins::%player%}*0.2 + 0.5 to {skypvp.coins::%{deadFall.%player%}%}
+  remove {skypvp.coins::%player%}*0.2 from {skypvp.coins::%player%}
+  if {skypvp.coins::%player%} is less than 0:
+   set {skypvp.coins::%player%} to 0
+  broadcast "{@killed-by-quiting}"
+  add 1 to {skypvp.kill::%{deadFall.%player%}%}
+  add 1 to {skypvp.death::%player%}
+  wait 1 tick
+  clear {deadFall.%player%}
+  if player has permission "{@permission-rank-4}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with diamond boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-3}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player iron sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-2}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  if player has permission "{@permission-rank-1}": 
+   equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+   equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+   Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+   stop
+  equip player with iron helmet named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with chain chestplate named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with chain leggings named "{@kitname}" with lore "&4&lLOCKED" 
+  equip player with iron boots named "{@kitname}" with lore "&4&lLOCKED" 
+  Give player stone sword named "{@kitname}" with lore "&4&lLOCKED" 
+
+
+
+on click on chest:
+ world is not "{@world}":
+  stop
+ cancel event  
+ set event-block to air
+ wait 1 tick 
+ set {random.%player%} to a random integer between 1 and 7
+ if {random.%player%} is 1:
+  chance of 1%:
+   drop diamond sword of sharpness 5 named "&d&LSWORD" with lore "&d&lMYTHIC"
+   play sound "ENDERDRAGON_GROWL" with volume 100 with pitch 1 at player for player
+   stop
+  chance of 20%:
+   drop sword of sharpness 3 named "&6&LSWORD" with lore "&6&lLEGENDARY"
+   stop
+  chance of 30%:
+   drop sword of sharpness 2 named "&5&LSWORD"  with lore "&5&lEPIC"
+   stop
+  chance of 50%:
+   drop sword of sharpness 1 named "&9&LSWORD" with lore "&9&lRARE"
+   stop
+  drop sword named "&7&LSWORD" with lore "&7&lCOMMON"
+ if {random.%player%} is 2 or 6 or 7:
+  set {random.armor.%player%} to a random integer between 1 and 4
+  if {random.armor.%player%} is 1:
+   chance of 1%:
+    drop diamond chestplate of protection 4 named "&d&LCHESTPLATE" with lore "&d&lMYTHIC"
+    play sound "ENDERDRAGON_GROWL" with volume 100 with pitch 1 at player for player
+    stop  
+   chance of 20%:
+    drop chestplate of protection 3 named "&6&LCHESTPLATE" with lore "&6&lLEGENDARY"
+    stop
+   chance of 30%:
+    drop chestplate of protection 2 named "&5&LCHESTPLATE" with lore "&5&lEPIC"
+    stop
+   chance of 50%:
+    drop chestplate of protection 1 named "&9&LCHESTPLATE" with lore "&9&lRARE"
+    stop
+   drop chestplate named "&7&LCHESTPLATE" with lore "&7&lCOMMON"
+  if {random.armor.%player%} is 2:
+   chance of 1%:
+    drop diamond helmet of protection 4 named "&d&LHELMET" with lore "&d&lMYTHIC"
+    play sound "ENDERDRAGON_GROWL" with volume 100 with pitch 1 at player for player
+    stop 
+   chance of 20%:
+    drop helmet of protection 3 named "&6&LHELMET" with lore "&6&lLEGENDARY"
+    stop
+   chance of 30%:
+    drop helmet of protection 2 named "&5&LHELMET" with lore "&5&lEPIC"
+    stop
+   chance of 50%:
+    drop helmet of protection 1 named "&9&LHELMET" with lore "&9&lRARE"
+    stop
+   drop helmet named "&7&LHELMET" with lore "&7&lCOMMON"
+  if {random.armor.%player%} is 3:
+   chance of 1%:
+    drop diamond leggings of protection 4 named "&d&LLEGGINGS" with lore "&d&lMYTHIC"
+    play sound "ENDERDRAGON_GROWL" with volume 100 with pitch 1 at player for player
+    stop 
+   chance of 20%:
+    drop leggings of protection 3 named "&6&LLEGGINGS" with lore "&6&lLEGENDARY"
+    stop
+   chance of 30%:
+    drop leggings of protection 2 named "&5&LLEGGINGS"  with lore "&5&lEPIC"
+    stop
+   chance of 50%:
+    drop leggings of protection 1 named "&9&LLEGGINGS" with lore "&9&lRARE"
+    stop
+   drop leggings named "&7&LLEGGINGS" with lore "&7&lCOMMON"
+  if {random.armor.%player%} is 4:
+   chance of 1%:
+    drop diamond boots of protection 4 named "&d&LBOOTS" with lore "&d&lMYTHIC"
+    play sound "ENDERDRAGON_GROWL" with volume 100 with pitch 1 at player for player
+    stop 
+   chance of 20%:
+    drop boots of protection 3 named "&6&LBOOTS" with lore "&6&lLEGENDARY"
+    stop
+   chance of 30%:
+    drop boots of protection 2 named "&5&LBOOTS"  with lore "&5&lEPIC"
+    stop
+   chance of 50%:
+    drop boots of protection 1 named "&9&LBOOTS" with lore "&9&lRARE"
+    stop
+   drop boots named "&7&LBOOTS" with lore "&7&lCOMMON"
+ if {random.%player%} is 3:
+  chance of 20%:
+   drop enchanted book of sharpness named "&6&LSHARPNESS" with lore "&6&lLEGENDARY"
+   stop
+  chance of 30%:
+   drop enchanted book of protection named "&5&LPROTECTION"  with lore "&5&lEPIC"
+   stop
+  chance of 50%:
+   drop enchanted book of unbreaking 3 named "&9&LUNBREAKING" with lore "&9&lRARE"
+   stop
+  drop enchanted book of power named "&7&LPOWER" with lore "&7&lCOMMON"
+ if {random.%player%} is 4:
+  chance of 50%:
+   drop bow named "&9&LBOW" with lore "&9&lRARE"
+   stop
+  drop 16 arrow named "&7&LARROW" with lore "&7&lCOMMON"
+ if {random.%player%} is 5:
+  chance of 20%:
+   drop 16 golden apple named "&9&LAPPLE" with lore "&9&lRARE"
+   stop
+  chance of 50%:
+   drop 16 lapis lazuli named "&7&LLAPIS" with lore "&7&lCOMMON"
+   stop
+  chance of 55%:
+   drop 1 paper named "&c&lKEY" with lore "&c&lSPECIAL" 
+   stop
+  chance of 60%:
+   drop 1 fishing rod named "&9&LROD" with lore "&9&lRARE"
+   stop
+  drop 1 Ender Pearl named "&5<ELEPORT" with lore "&5&lEPIC"
+
+
+command /key [<text>]:
+ permission: op
+ trigger:
+  world is not "{@world}":
+   stop
+  give 1 paper named "&c&lKEY" with lore "&c&lSPECIAL" to player
+
+
+
+on rightclick on Piston:
+ world is not "{@world}":
+  stop
+ if {keychest.%player%} is set:
+  if slot 13 of {keychest.%player%} is bow or sword or chestplate or leggings or boots or helmet:
+   open {keychest.%player%} to player
+   send "&7You didn't got the old gift"
+   stop 
+ if player doesn't have paper named "&c&lKEY" with lore "&c&lSPECIAL":
+  send "&7You need a key for this"
+  stop
+ else:
+  remove 1 paper named "&c&lKEY" with lore "&c&lSPECIAL" from player
+  set {anticlick.%player%} to true
+  set {keychest.%player%} to a new chest inventory with 3 row with name "&4&lKEYS"
+  wait 1 ticks
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  open {keychest.%player%} to player
+  play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to sword of sharpness 5 named "&c&lSWORD" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to bow of power 5 named "&c&lBOW" with lore "&c&lSPECIAL" 
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to chestplate of protection 4 named "&c&lCHESTPLATE" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to boots of protection 4 named "&c&lBOOTS" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to helmet of protection 4 named "&c&lHELMET" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to leggings of protection 4 named "&c&lleggings" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  wait 3 tick
+  play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+  set slot 13 of {keychest.%player%} to sword of sharpness 5 named "&c&lSWORD" with lore "&c&lSPECIAL"
+  set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+  set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+  loop 100 times:
+   play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to sword of sharpness 5 named "&c&lSWORD" with lore "&c&lSPECIAL"
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+   play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to bow of power 5 named "&c&lBOW" with lore "&c&lSPECIAL" 
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+   play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to chestplate of protection 4 named "&c&lCHESTPLATE" with lore "&c&lSPECIAL"
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+   play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to boots of protection 4 named "&c&lBOOTS" with lore "&c&lSPECIAL"
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+   play sound "NOTE_PLING" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to helmet of protection 4 named "&c&lHELMET" with lore "&c&lSPECIAL"
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+   play sound "NOTE_PIANO" with volume 100 with pitch 1 at player for player
+   set slot 13 of {keychest.%player%} to leggings of protection 4 named "&c&lleggings" with lore "&c&lSPECIAL"
+   set slots (all integers between 0 and 12) of {keychest.%player%} to glass pane named "&a"
+   set slots (all integers between 14 and 26) of {keychest.%player%} to glass pane named "&a"
+   chance of 10%:
+    delete {anticlick.%player%}
+    stop
+   wait 3 tick
+
+
+on inventory click:
+ if name of event-inventory is "&4&lKEYS":
+  clicked slot is not 13:
+   cancel event
+  clicked slot is 13:
+   if {anticlick.%player%} is not set:
+    if slot 13 of {keychest.%player%} is bow or sword or chestplate or leggings or boots or helmet:
+     wait 1 tick
+     set slot 13 of {keychest.%player%} to 166 named "&a"
+    else: 
+     cancel event
+   else: 
+    cancel event
+
+on place:
+ world is not "{@world}":
+  stop
+ if player's tool is a anvil:
+  set event-block to anvil
+
+on rightclick on anvil:
+ world is not "{@world}":
+  stop
+ cancel event
+ set {_guianvil} to a new chest inventory with 3 row with name "&4&lANVIL"
+ if player's tool is a sword or helmet or chestplate or leggings or boots or bow or fishing rod:
+  set slot 11 of {_guianvil} to anvil named "&c&lREPAIR" with lore "&7Cost you 1 coin to repair your item"
+  set slot 15 of {_guianvil} to book named "&c&lENCHANT" with lore "&7Cost you an enchanted book and 1 exp level"
+  if player's tool is sword or chestplate or leggings or boots or helmet:
+   set slot 13 of {_guianvil} to bottle of enchanting named "&c&lUPGRADE" with lore "&7Cost you 1 coin and 3 exp level"
+  open {_guianvil} to player
+ else:
+  set slot 13 of {_guianvil} to anvil named "&c&lNONE" with lore "&7This item is not approved||&7Try one of these:||&7Sword, &7Bow, &7Armor, &7Rod"
+  open {_guianvil} to player
+
+on inventory click:
+ if name of event-inventory is "&4&lANVIL":
+  cancel event
+  wait 1 ticks
+  clicked slot is 13:
+   if player's tool is not sword or chestplate or leggings or boots or helmet:
+    stop
+   if player's tool is diamond sword or diamond chestplate or diamond leggings or diamond boots or diamond helmet:
+    send "&7This item has already this upgraded"
+    stop
+   if {skypvp.coins::%player%} is not greater than or equal to 1:
+    send "{@nocoins}"
+    stop  
+   if player's level is greater than or equal to 3:
+    remove 3 from player's level
+    remove 1 from {skypvp.coins::%player%} 
+    play sound "ANVIL_USE" with volume 100 with pitch 1 at player for player
+    set {item.lore} to lore of tool of player
+    set {item.name} to name of tool of player
+    set {item.durability} to durability of tool of player
+    if player's tool is not enchanted with unbreaking 3:
+     delete {item.unbreaking}
+    else:
+     set {item.unbreaking} to true
+    if player's tool is enchanted with sharpness 5:
+     set {item.enchant} to 5
+    if player's tool is enchanted with sharpness 4:
+     set {item.enchant} to 4
+    if player's tool is enchanted with sharpness 3:
+     set {item.enchant} to 3
+    if player's tool is enchanted with sharpness 2:
+     set {item.enchant} to 2
+    if player's tool is enchanted with sharpness 1:
+     set {item.enchant} to 1
+    if player's tool is enchanted with protection 4:
+     set {item.enchant} to 4
+    if player's tool is enchanted with protection 3:
+     set {item.enchant} to 3
+    if player's tool is enchanted with protection 2:
+     set {item.enchant} to 2
+    if player's tool is enchanted with protection 1:
+     set {item.enchant} to 1
+    if player's tool is not enchanted:
+     delete {item.enchant} 
+    if player's tool is sword:
+     if player's tool is iron sword:
+      set player's held item to diamond sword named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is stone sword:
+      set player's held item to iron sword named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is wooden sword or golden sword:
+      set player's held item to stone sword named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if {item.unbreaking} is true:
+      enchant player's tool with unbreaking 3
+     if {item.enchant} is 1:
+      enchant player's tool with sharpness 1
+     if {item.enchant} is 2:
+      enchant player's tool with sharpness 2    
+     if {item.enchant} is 3:
+      enchant player's tool with sharpness 3
+     if {item.enchant} is 4:
+      enchant player's tool with sharpness 4 	 
+     if {item.enchant} is 5:
+      enchant player's tool with sharpness 5
+     stop
+    if player's tool is helmet or chestplate or leggings or boots:
+     play sound "ANVIL_USE" with volume 100 with pitch 1 at player for player
+     if player's tool is iron helmet:
+      set player's held item to diamond helmet named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is chain helmet:
+      set player's held item to iron helmet named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is leather helmet or golden helmet:
+      set player's held item to chain helmet named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is iron chestplate:
+      set player's held item to diamond chestplate named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is chain chestplate:
+      set player's held item to iron chestplate named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is leather chestplate or golden chestplate:
+      set player's held item to chain chestplate named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is iron leggings:
+      set player's held item to diamond leggings named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is chain leggings:
+      set player's held item to iron leggings named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is leather leggings or golden leggings:
+      set player's held item to chain leggings named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is iron boots:
+      set player's held item to diamond boots named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is chain boots:
+      set player's held item to iron leggings named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if player's tool is leather boots or golden boots:
+      set player's held item to chain boots named "%{item.name}%" with lore "%{item.lore}%"
+      set damage value of player's tool to {item.durability}
+     if {item.unbreaking} is true:
+      enchant player's tool with unbreaking 3
+     if {item.enchant} is 1:
+      enchant player's tool with protection 1
+     if {item.enchant} is 2:
+      enchant player's tool with protection 2    
+     if {item.enchant} is 3:
+      enchant player's tool with protection 3
+     if {item.enchant} is 4:
+      enchant player's tool with protection 4 	 
+     if {item.enchant} is 5:
+      enchant player's tool with protection 5	 
+   else:
+    send "&7You need at 3 exp level"
+  clicked slot is 11:
+   if {skypvp.coins::%player%} is greater than or equal to 1:
+    repair tool of player
+    send "&7This item has been repaired"
+    remove 1 from {skypvp.coins::%player%} 
+    close player's inventory
+   else:
+    send "{@nocoins}"
+  clicked slot is 15:
+   set {_guianvil2} to a new chest inventory with 3 row with name "&4&lANVIL ENCHANT"
+   wait 1 ticks
+   set slot 11 of {_guianvil2} to book named "&9&LUNBREAKING" with lore "&7You need unbreaking book to use this"
+   if player's tool is a sword:
+    set slot 15 of {_guianvil2} to book named "&6&LSHARPNESS" with lore "&7You need a shaprness book for this"
+   if player's tool is a boots or helmet or chestplate or leggings:
+    set slot 15 of {_guianvil2} to book named "&5&LPROTECTION" with lore "&7You need a protection book for this"
+   if player's tool is a bow:
+    set slot 15 of {_guianvil2} to book named "&7&LPOWER" with lore "&7You need a power book for this"
+   if player's tool is not a sword or bow or boots or helmet or chestplate or leggings:
+    set slot 15 of {_guianvil2} to gray glass pane named "&7&lNONE" with lore "&7You can not add enchanted book to this item"
+   open {_guianvil2} to player
+
+
+on inventory click:
+ if name of event-inventory is "&4&lANVIL ENCHANT":
+  cancel event
+  wait 1 ticks
+  clicked slot is 11 or 15:
+   if player's level is not greater than or equal to 1:
+    send "&7You need at 1 exp level"
+    stop
+  clicked slot is 11:
+   if player's tool is not enchanted with unbreaking 3:
+    if player has enchanted book named "&9&LUNBREAKING" with lore "&9&lRARE":
+     remove 1 enchanted book named "&9&LUNBREAKING" with lore "&9&lRARE" from player
+     enchant player's tool with unbreaking 3
+     remove 1 from player's level
+    else:
+     send "&7You need unbreaking book for this"
+   else:
+    send "&7This item has already this max enchant"
+  clicked slot is 15:
+   if player's tool is a sword:
+    if player has enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY":
+     if player's tool is enchanted with sharpness 5:
+      send "&7This item has already this max enchant"
+      stop
+     if player's tool is enchanted with sharpness 4:
+      remove 1 enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY" from player
+      enchant player's tool with sharpness 5
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with sharpness 3:
+      remove 1 enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY" from player
+      enchant player's tool with sharpness 4
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with sharpness 2:
+      remove 1 enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY" from player
+      enchant player's tool with sharpness 3
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with sharpness 1:
+      remove 1 enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY" from player
+      enchant player's tool with sharpness 2
+      remove 1 from player's level
+      stop
+     if player's tool is not enchanted with sharpness 1:
+      remove 1 enchanted book named "&6&LSHARPNESS" with lore "&6&lLEGENDARY" from player
+      enchant player's tool with sharpness 1
+      remove 1 from player's level
+    else:
+     send "&7You need sharpness book for this"
+   if player's tool is a boots or helmet or chestplate or leggings:
+    if player has enchanted book named "&5&LPROTECTION"  with lore "&5&lEPIC":
+     if player's tool is enchanted with protection 4:
+      send "&7This item has already this max enchant"
+      stop
+     if player's tool is enchanted with protection 3:
+      remove 1 enchanted book named "&5&LPROTECTION"  with lore "&5&lEPIC" from player
+      enchant player's tool with protection 4
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with protection 2:
+      remove 1 enchanted book named "&5&LPROTECTION"  with lore "&5&lEPIC" from player
+      enchant player's tool with protection 3
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with protection 1:
+      remove 1 enchanted book named "&5&LPROTECTION"  with lore "&5&lEPIC" from player
+      enchant player's tool with protection 2
+      remove 1 from player's level
+      stop
+     if player's tool is not enchanted with protection 1:
+      remove 1 enchanted book named "&5&LPROTECTION"  with lore "&5&lEPIC" from player
+      enchant player's tool with protection 1
+      remove 1 from player's level
+    else:
+     send "&7You need protection book for this"
+   if player's tool is a bow:
+    if player has enchanted book named "&7&LPOWER" with lore "&7&lCOMMON":
+     if player's tool is enchanted with power 5:
+      send "&7This item has already this max enchant"
+      stop
+     if player's tool is enchanted with power 4:
+      remove 1 enchanted book named "&7&LPOWER" with lore "&7&lCOMMON" from player
+      enchant player's tool with power 5
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with power 3:
+      remove 1 enchanted book named "&7&LPOWER" with lore "&7&lCOMMON" from player
+      enchant player's tool with power 4
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with power 2:
+      remove 1 enchanted book named "&7&LPOWER" with lore "&7&lCOMMON" from player
+      enchant player's tool with power 3
+      remove 1 from player's level
+      stop
+     if player's tool is enchanted with power 1:
+      remove 1 enchanted book named "&7&LPOWER" with lore "&7&lCOMMON" from player
+      enchant player's tool with power 2
+      remove 1 from player's level
+      stop
+     if player's tool is not enchanted with power 1:
+      remove 1 enchanted book named "&7&LPOWER" with lore "&7&lCOMMON" from player
+      enchant player's tool with power 1
+      remove 1 from player's level
+    else:
+     send "&7You need sharpness book for this"
+
+
+command /pay [<offline player>] [<integer>] [<text>]:
+ trigger:
+  world is not "{@world}":
+   send "&eYou can not use this command on this world"
+   stop
+  if arg 1 is set:
+   if arg 2 is set:
+    if {skypvp.coins::%player%} is greater than or equal to arg 2:
+     remove arg 2 from {skypvp.coins::%player%}
+     add arg 2 to {skypvp.coins::%arg 1%}
+     send "&7You send to %arg 1% &e%arg 2%$" to player
+     send "&7%player% send you &e%arg 2%$" to arg 1
+    else:
+     send "&7You do not have enough money!"
+   else:
+    send "&7You must enter a amount!"
+  else:
+   send "&7You must enter a player!"
+
+every 5 minutes:
+ broadcast "{@drop-clear-msg-1}"
+ wait 5 seconds
+ broadcast "{@drop-clear-msg-2}"
+ kill dropped items
+ wait 5 seconds
+ set block at location at ({@chest-1}) in world "{@world}" to chest
+ set block at location at ({@chest-2}) in world "{@world}" to chest
+ set block at location at ({@chest-3}) in world "{@world}" to chest
+ set block at location at ({@chest-4}) in world "{@world}" to chest
+ set block at location at ({@chest-5}) in world "{@world}" to chest
+ set block at location at ({@chest-6}) in world "{@world}" to chest
+ set block at location at ({@chest-7}) in world "{@world}" to chest
+ set block at location at ({@chest-8}) in world "{@world}" to chest
+ set block at location at ({@chest-9}) in world "{@world}" to chest
+ set block at location at ({@chest-10}) in world "{@world}" to chest
+ set block at location at ({@chest-11}) in world "{@world}" to chest
+ set block at location at ({@chest-12}) in world "{@world}" to chest
+ set block at location at ({@chest-13}) in world "{@world}" to chest
+ set block at location at ({@chest-14}) in world "{@world}" to chest
+ set block at location at ({@chest-15}) in world "{@world}" to chest
+ set block at location at ({@chest-16}) in world "{@world}" to chest
+ set block at location at ({@chest-17}) in world "{@world}" to chest
+ set block at location at ({@chest-18}) in world "{@world}" to chest
+ set block at location at ({@chest-19}) in world "{@world}" to chest
+ set block at location at ({@chest-20}) in world "{@world}" to chest
+ set block at location at ({@chest-21}) in world "{@world}" to chest
+ set block at location at ({@chest-22}) in world "{@world}" to chest
+ set block at location at ({@chest-23}) in world "{@world}" to chest
+ set block at location at ({@chest-24}) in world "{@world}" to chest
+ set block at location at ({@chest-25}) in world "{@world}" to chest
+ set block at location at ({@chest-26}) in world "{@world}" to chest
+ set block at location at ({@chest-27}) in world "{@world}" to chest
+ set block at location at ({@chest-28}) in world "{@world}" to chest
+ set block at location at ({@chest-29}) in world "{@world}" to chest
+ set block at location at ({@chest-30}) in world "{@world}" to chest
+ set block at location at ({@chest-31}) in world "{@world}" to chest
+ set block at location at ({@chest-32}) in world "{@world}" to chest
+ set block at location at ({@chest-33}) in world "{@world}" to chest
+ set block at location at ({@chest-34}) in world "{@world}" to chest
+ set block at location at ({@chest-35}) in world "{@world}" to chest
+ set block at location at ({@chest-36}) in world "{@world}" to chest
+ set block at location at ({@chest-37}) in world "{@world}" to chest
+ set block at location at ({@chest-38}) in world "{@world}" to chest
+ set block at location at ({@chest-39}) in world "{@world}" to chest
+ set block at location at ({@chest-40}) in world "{@world}" to chest
+ set block at location at ({@chest-41}) in world "{@world}" to chest
+ set block at location at ({@chest-42}) in world "{@world}" to chest
+ set block at location at ({@chest-43}) in world "{@world}" to chest
+ set block at location at ({@chest-44}) in world "{@world}" to chest
+ set block at location at ({@chest-45}) in world "{@world}" to chest
+ set block at location at ({@chest-46}) in world "{@world}" to chest
+ set block at location at ({@chest-47}) in world "{@world}" to chest
+ set block at location at ({@chest-48}) in world "{@world}" to chest
+ set block at location at ({@chest-49}) in world "{@world}" to chest
+ set block at location at ({@chest-50}) in world "{@world}" to chest
+ set block at location at ({@chest-51}) in world "{@world}" to chest
+ set block at location at ({@chest-52}) in world "{@world}" to chest
+ set block at location at ({@chest-53}) in world "{@world}" to chest
+ set block at location at ({@chest-54}) in world "{@world}" to chest
+ set block at location at ({@chest-55}) in world "{@world}" to chest
+ set block at location at ({@chest-56}) in world "{@world}" to chest
+ set block at location at ({@chest-58}) in world "{@world}" to chest
+ set block at location at ({@chest-59}) in world "{@world}" to chest
+ set block at location at ({@chest-60}) in world "{@world}" to chest
+ set block at location at ({@chest-61}) in world "{@world}" to chest
+ set block at location at ({@chest-62}) in world "{@world}" to chest
+ set block at location at ({@chest-63}) in world "{@world}" to chest
+ set block at location at ({@chest-64}) in world "{@world}" to chest
+ set block at location at ({@chest-65}) in world "{@world}" to chest
+ set block at location at ({@chest-66}) in world "{@world}" to chest
+ set block at location at ({@chest-67}) in world "{@world}" to chest
+ set block at location at ({@chest-68}) in world "{@world}" to chest
+ set block at location at ({@chest-69}) in world "{@world}" to chest
+ set block at location at ({@chest-70}) in world "{@world}" to chest
+ broadcast "{@chest-msg}"
+
+
